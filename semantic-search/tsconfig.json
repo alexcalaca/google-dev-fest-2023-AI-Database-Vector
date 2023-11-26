@@ -1,0 +1,30 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "lib": ["ESNext"],
+    "module": "NodeNext",
+    "rootDir": "./",
+    "paths": {
+      "@src": ["./src"],
+      "@src/*": ["./src/*"]
+    },
+    "moduleResolution": "NodeNext",
+    "resolveJsonModule": true,
+    "outDir": "./build",
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "noImplicitAny": true,
+    "skipLibCheck": true,
+    "types": ["node", "vitest/globals"]
+  },
+  "include": ["src", "package.json", "tests/**/*.test.ts"],
+  "exclude": ["build"],
+  "resolveJsonModule": {
+    "extensions": [".ts", ".tsx", ".js", ".jsx"]
+  },
+  "ts-node": {
+    "esm": true,
+    "experimentalSpecifierResolution": "node"
+  }
+}
